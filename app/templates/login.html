@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>login page</title>
+    </head>
+    <body>
+        <form method="post" action="/addlogin/">
+            {% csrf_token %} 
+            <label>username</label>
+            <input type="text" name="username"><br><br>
+            <label>password</label>
+            <input type="password" name="password"><br><br>
+            <input type="submit" value="login">
+        </form>
+        <a href="/form1/">create account</a>
+    </body>
+</html>
